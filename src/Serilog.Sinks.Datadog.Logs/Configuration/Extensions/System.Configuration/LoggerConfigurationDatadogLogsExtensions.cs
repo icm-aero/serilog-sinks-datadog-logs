@@ -49,7 +49,7 @@ namespace Serilog
             TimeSpan? batchPeriod = null,
             int? queueLimit = null,
             Action<Exception> exceptionHandler = null,
-            ILogFormatterFactory logFormatterFactory = null)
+            LogFormatterFactory logFormatterFactory = null)
         {
             if (loggerConfiguration == null)
             {
