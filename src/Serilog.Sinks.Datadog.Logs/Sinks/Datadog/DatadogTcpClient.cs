@@ -21,7 +21,7 @@ namespace Serilog.Sinks.Datadog.Logs
     public class DatadogTcpClient : IDatadogClient
     {
         private readonly DatadogConfiguration _config;
-        private readonly LogFormatter _formatter;
+        private readonly ILogFormatter _formatter;
         private readonly string _apiKey;
         private TcpClient _client;
         private Stream _stream;
@@ -51,7 +51,7 @@ namespace Serilog.Sinks.Datadog.Logs
         /// </summary>
         private static readonly UTF8Encoding UTF8 = new UTF8Encoding();
 
-        public DatadogTcpClient(DatadogConfiguration config, LogFormatter formatter, string apiKey)
+        public DatadogTcpClient(DatadogConfiguration config, ILogFormatter formatter, string apiKey)
         {
             _config = config;
             _formatter = formatter;
