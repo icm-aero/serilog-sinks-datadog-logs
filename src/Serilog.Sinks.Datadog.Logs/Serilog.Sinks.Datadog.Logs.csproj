@@ -20,7 +20,7 @@
   <ItemGroup>
     <PackageReference Include="Serilog.Sinks.PeriodicBatching" Version="2.2.0" />
     <PackageReference Include="Serilog" Version="2.9.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <Compile Remove="Configuration\Extensions\Microsoft.Extensions.Configuration\**\*.*" />
     <Compile Remove="Configuration\Extensions\System.Configuration\**\*.*" />
     <Compile Remove="Configuration\Implementations\Microsoft.Extensions.Configuration\**\*.*" />
